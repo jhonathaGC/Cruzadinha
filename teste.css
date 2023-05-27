@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(fun.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.C_1,.C_2,.C_3,.C_4,.C_5,.C_6,.C_7,.C_8,.C_9,.C_10,.C_11,.C_12,.C_13,.C_14,.C_15{
+    display: flex;
+
+    width: 100%;
+    
+}
+input{
+    text-transform: uppercase;
+}
+.letra{
+        width: 4.5%;
+        height: 2vh;
+        border-style: outset;
+        text-align: center;
+    
+}
+
+.geral{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.geral_0{
+    width: 25%;
+    height: 40vh;
+    margin-top: 8%;
+ 
+}
+.perguntas button, input{
+   background: transparent;
+   border-style: outset;
+}
+.perguntas{
+    width: 33.3%;
+}
+h1, h2{
+    text-align: center;
+}
+
+
+
+.C_1 ._1{
+    margin-left: 46.1%;
+}
+.C_1 ._2{
+    margin-left: 11.6%;
+}
+
+/*coluna 2*/
+.C_2 ._4{
+    margin-left: 28.7%;
+}
+.C_2 ._5{
+    margin-left: 11.6%;
+}
+.C_2 ._6{
+    margin-left: 5.6%;
+}
+
+
+
+.C_3 ._1{
+    margin-left: 5.6%;
+}
+
+
+
+.C_4 ._1{
+    margin-left: 11.5%;
+}
+.C_4 ._2{
+    margin-left: 5.6%;
+}
+.C_4 ._3{
+    margin-left: 17.5%;
+}
+.C_4 ._5{
+    margin-left: 5.9%;
+}
+
+
+.C_5 ._1{
+    margin-left: 11.5%;
+}
+.C_5 ._2{
+    margin-left: 28.7%;
+}
+.C_5 ._4{
+    margin-left: 5.9%;
+}
+
+
+.C_6 ._11{
+    margin-left: 5.5%;
+}
+
+.C_7 ._1{
+    margin-left: 11.5%;
+}
+
+.C_7 ._3{
+    margin-left: 6%;
+}
+.C_7 ._4{
+    margin-left: 16.9%;
+}
+.C_7 ._5{
+    margin-left: 5.8%;
+}
+
+
+.C_8 ._1{
+    margin-left: 11.5%;
+}
+.C_8 ._2{
+    margin-left: 11.9%;
+}
+.C_8 ._3{
+    margin-left: 5.6%;
+}
+.C_8 ._4{
+    margin-left: 5.8%;
+}
+
+
+
+.C_9 ._2{
+    margin-left: 5.7%;
+}
+
+
+.C_10 ._2{
+    margin-left: 5.7%;
+}
+.C_10 ._3{
+    margin-left: 23.6%;
+}
+.C_10 ._4{
+    margin-left: 5.4%;
+}
+
+
+.C_11 ._4{
+    margin-left: 23.6%;
+}
+.C_11 ._5{
+    margin-left: 2.4%;
+}
+
+
+.C_12 ._2{
+    margin-left: 5.6%;
+}
+.C_12 ._3{
+    margin-left: 11.8%;
+}
+.C_12 ._4{
+    margin-left: 6.1%;
+}
+
+
+.C_13 ._2{
+    margin-left: 5.6%;
+}
+.C_13 ._3{
+    margin-left: 11.8%;
+}
+.C_13 ._4{
+    margin-left: 6.1%;
+}
+
+
+.C_14 ._1{
+    margin-left: 11.4%;
+}
+.C_14 ._2{
+    margin-left: 11.8%;
+}
+.C_14 ._3{
+    margin-left: 6.1%;
+}
+
+
+
+.C_15 ._1{
+    margin-left: 5.6%;
+}
+
+
+.C_15 ._6{
+    margin-left: 6.3%;
+}

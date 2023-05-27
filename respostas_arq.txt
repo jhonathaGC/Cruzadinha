@@ -1,0 +1,35 @@
+*CPU -responsável por processar todas as principais operações de funcionamento de um computador
+
+*ULA -Unidade Lógica e Aritmética 
+
+*REGISTRADORES -  servem para guardar dados e endereços (sejam de memória ou dos próprios registradores internos), atuam como entradas e saídas para as operações da CPU
+
+*RAM -Componente responsável por dar mais agilidade e velocidade no funcionamento geral do sistema
+
+*ROM - armazena firmwares ou pequenos softwares que funcionam apenas em um hardware específico
+
+*EPROM -armazena as informações, para serem recuperadas e utilizadas posteriormente, mesmo depois de a alimentação ter sido interrompida.
+
+*FLASH - memória com características muito semelhantes à memória RAM,apenas com o diferencial crucial de ser não volátil.
+
+*MEMORIA DE MASSA - memória interna ao medidor onde são armazenadas, ao longo do tempo, em intervalos definidos, grandezas medidas ou calculadas, para posterior acesso
+
+*DMA - O DMA ou Direct Memory Access é o método que permite que um dispositivo de entrada e saída envie ou receba dados diretamente da memória principal, ignorando a CPU, acelerando as operações que envolvem a memória.
+
+*CS -Seleção de chip ou seleção de escravo é o nome de uma linha de controle em eletrônica digital usada para selecionar um dos circuitos integrados entre vários conectados ao mesmo barramento de computador, geralmente utilizando a lógica de três estados
+
+*ADDRESS BUS -Um address bus ou barramento de endereço é uma arquitetura de barramento de computador usada para transferir dados entre dispositivos identificados pelo endereço de hardware da memória física (o endereço físico), que é armazenado na forma de números binários para permitir que o barramento de dados acesse o armazenamento da memória.
+
+*DATA BUS -Um data bus ou barramento de dados é um sistema dentro de um computador ou dispositivo, consistindo de um conector ou conjunto de fios, que fornece transporte para dados. Diferentes tipos de barramentos de dados evoluíram junto com computadores pessoais e outras peças de hardware.
+
+I5 -Fabricante:	Intel, Inicio da produção: 9 de Setembro de 2009
+
+*I7 -Fabricante: Intel,Produzido em: 2008 Os processadores Intel Core i7 são modelos avançados da linha, ficando atrás apenas dos i9. Quinta, sexta e sétima gerações oferecem de 4 a 8 threads, 2 a 4 núcleos e Cache de 4 ou 6 (5ª) e 4, 6 ou 8 MB. A partir da oitava geração, os componentes trazem 8, 9 ou 12 MB de Cache, 4 a 6 núcleos e 8 a 12 threads – com exceção do i7-8500Y, que conta com 4 MB, 2 núcleos e 4 threads.
+
+*DUAL CORE -O modelo dual-core ganha esse nome porque tem dois núcleos. É como se ele tivesse dois cérebros trabalhando ao mesmo tempo pra você usar os apps ou realizar qualquer tarefa sem problemas. O processador dual-core é o mais simples atualmente e é recomendado pra rodar jogos bem levinhos e pras tarefas mais básicas.
+*QUAD CORE -Já o quad-core é aquele processador que possui quatro núcleos e trabalha com todos eles ao mesmo tempo, executando várias funções! Ele é uma versão mais potente do que o dual-core e melhora o desempenho na hora de usar vários apps ao mesmo tempo ou rodar jogos pesados com ainda mais velocidade.
+
+*threads - A thread que recebe e executa todas as instruções, como uma ordem do que será feito por vez. É como um subsistema dentro do processador, onde os processos irão se dividir em duas ou mais tarefas. Essas tarefas são as threads ou linhas de execução.
+Como exemplo, um programa que recebe dois números, multiplica um pelo outro e retorna, contém apenas um fluxo de execução. Já um programa que transforma uma imagem em cinza, pode dividir a imagem em 4 quadrantes e processar cada quadrante em um thread (fluxo de execução) para depois retornar a imagem final.
+
+*MEMORIA CACHE -Ela tem o objetivo de guardar dados, informações e processos temporários acessados com frequência e assim agilizar o processo de uso no momento em que são requisitados pelo usuário. Desse modo, a memória cache pode ser considerada um pequeno componente que consta dentro do processador.	

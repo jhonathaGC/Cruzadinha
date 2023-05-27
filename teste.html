@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="teste.css">
+</head>
+
+<body>
+
+  <h1>Teste o seu conhecimento</h1>
+  <h2>isto é, caso você tenha algum</h2>
+  <div class="geral">
+    <div class="perguntas">
+
+      <h1>Dicas</h1>
+
+
+      responsável por processar todas as principais operações de funcionamento de um computador
+      <input id="input_cpu">
+      <button onclick="verificar_1()">Verificar</button>
+      <br>
+
+      Unidade Lógica e Aritmética
+      <input id="input_ula">
+      <button onclick="verificar_2()">Verificar</button>
+      <br>
+
+      servem para guardar dados e endereços, atuam como entradas e saídas para as operações da CPU
+      <input id="input_registradores">
+      <button onclick="verificar_3()">Verificar</button>
+      <br>
+
+      Componente responsável por dar mais agilidade e velocidade no funcionamento geral do sistema
+      <input id="input_ram">
+      <button onclick="verificar_4()">Verificar</button>
+      <br>
+
+      armazena firmwares ou pequenos softwares que funcionam apenas em um hardware específico
+      <input id="input_rom">
+      <button onclick="verificar_5()">Verificar</button>
+      <br>
+
+      Qarmazena as informações, para serem recuperadas e utilizadas posteriormente, mesmo depois de a alimentação ter
+      sido
+      interrompida.
+      <input id="input_eprom">
+      <button onclick="verificar_6()">Verificar</button>
+      <br>
+
+      memória com características muito semelhantes à memória RAM,apenas com o diferencial crucial de ser não volátil.
+
+      <input id="input_flash">
+      <button onclick="verificar_7()">Verificar</button>
+      <br>
+
+      memória interna ao medidor onde são armazenadas, ao longo do tempo, em intervalos definidos, grandezas medidas ou
+      calculadas, para posterior acesso
+      <input id="input_MemoriaMassa">
+      <button onclick="verificar_8()">Verificar</button>
+      <br>
+
+      O DMA ou Direct Memory Access é o método que permite que um dispositivo de entrada e saída envie ou receba dados
+      diretamente da memória principal, ignorando a CPU, acelerando as operações que envolvem a memória.
+      <input id="input_dma">
+      <button onclick="verificar_9()">Verificar</button>
+      <br>
+
+
+      Seleção de chip ou seleção de escravo é o nome de uma linha de controle em eletrônica digital usada para
+      selecionar
+      um dos circuitos integrados entre vários conectados ao mesmo barramento de computador, geralmente utilizando a
+      lógica de três estados
+      <input id="input_cs">
+      <button onclick="verificar_10()">Verificar</button>
+      <br>
+
+      Arquitetura de barramento de computador usada para transferir dados
+      entre dispositivos identificados pelo endereço de hardware da memória física (o endereço físico), que é armazenado
+      na forma de números binários para permitir que o barramento de dados acesse o armazenamento da memória.
+      <input id="input_AdressBus">
+      <button onclick="verificar_11()">Verificar</button>
+      <br>
+
+
+    </div>
+
+    <div class="geral_0">
+      <div class="coluna C_1">
+        <div class="letra _1" id="flash_1"></div>
+        <div class="letra _2" id=""></div>
+
+      </div>
+
+      <div class="coluna C_2">
+        <div class="letra _1" id="ram_1"></div>
+        <div class="letra _2" id="ram_2"></div>
+        <div class="letra _3" id="ram_3"></div>
+        <div class="letra _4" id="flash_2"></div>
+        <div class="letra _5"></div>
+        <div class="letra _6" id="cs_1"></div>
+      </div>
+
+      <div class="coluna C_3">
+        <div class="letra _1" id="registradores_1"></div>
+        <div class="letra _2" id="MemoriaMassa_1"></div>
+        <div class="letra _3" id="registradores_2"></div>
+        <div class="letra _4" id="registradores_3"></div>
+        <div class="letra _5" id="registradores_4"></div>
+        <div class="letra _6" id="registradores_5"></div>
+        <div class="letra _7" id="registradores_6"></div>
+        <div class="letra _8" id="registradores_7"></div>
+        <div class="letra _9" id="registradores_8"></div>
+        <div class="letra _10" id="registradores_9"></div>
+        <div class="letra _11" id="registradores_10"></div>
+        <div class="letra _12" id="registradores_11"></div>
+        <div class="letra _13" id="registradores_12"></div>
+
+      </div>
+
+      <div class="coluna C_4">
+        <div class="letra _1" id="MemoriaMassa_2"></div>
+        <div class="letra _2" id=""></div>
+        <div class="letra _3" id="flash_3"></div>
+        <div class="letra _4"></div>
+        <div class="letra _5"></div>
+      </div>
+      <div class="coluna C_5">
+        <div class="letra _1" id="MemoriaMassa_3"></div>
+        <div class="letra _2" id="flash_4"></div>
+        <div class="letra _3"></div>
+        <div class="letra _4"></div>
+      </div>
+
+      <div class="coluna C_6">  
+        <div class="letra _1" id="AdressBus_1"></div>
+        <div class="letra _2" id="AdressBus_2" ></div>
+        <div class="letra _3" id="AdressBus_3"></div>
+        <div class="letra _4" id="MemoriaMassa_4"></div>
+        <div class="letra _5" id="AdressBus_4"></div>
+        <div class="letra _6" id="AdressBus_5"></div>
+        <div class="letra _7" id="AdressBus_6"></div>
+        <div class="letra _8" id="AdressBus_7"></div>
+        <div class="letra _9" id="AdressBus_8"></div>
+        <div class="letra _10" id=""></div>
+        <div class="letra _11"></div>
+        <div class="letra _12"></div>
+        <div class="letra _13"></div>
+      </div>
+
+      <div class="coluna C_7">
+        <div class="letra _1" id="i_7"></div>
+        <div class="letra _2" id="i7_7"></div>
+        <div class="letra _3" id="ula_1"></div>
+        <div class="letra _4"></div>
+        <div class="letra _5"></div>
+       
+      </div>
+
+      <div class="coluna C_8">
+        <div class="letra _1" id="MemoriaMassa_5"></div>
+        <div class="letra _2" id="ula_2"></div>
+        <div class="letra _3"></div>
+        <div class="letra _4"></div>
+      </div>
+
+      <div class="coluna C_9">
+        <div class="letra _1" id="eprom_1"></div>
+        <div class="letra _2" id="MemoriaMassa_6"></div>
+        <div class="letra _3"></div>
+        <div class="letra _4"></div>
+        <div class="letra _5"></div>
+        <div class="letra _6" id="ula_3"></div>
+        <div class="letra _7"></div>
+        <div class="letra _8"></div>
+        <div class="letra _9"></div>
+      </div>
+
+      <div class="coluna C_10">
+        <div class="letra _1" id="eprom_2"></div>
+        <div class="letra _2" id="MemoriaMassa_7"></div>
+        <div class="letra _3"></div>
+        <div class="letra _4"></div>
+      </div>
+
+      <div class="coluna C_11">
+        <div class="letra _1" id="eprom_3"></div>
+        <div class="letra _2" id="rom_1"></div>
+        <div class="letra _3" id="MemoriaMassa_8"></div>
+        <div class="letra _4"></div>
+
+      </div>
+
+      <div class="coluna C_12">
+        <div class="letra _1" id="eprom_4"></div>
+        <div class="letra _2" id="MemoriaMassa_9"></div>
+        <div class="letra _3" ></div>
+        <div class="letra _4" id="cpu_1"></div>
+        <div class="letra _5" id="cpu_2"></div>
+        <div class="letra _6" id="cpu_3"></div>
+      </div>
+
+      <div class="coluna C_13">
+        <div class="letra _1" id="eprom_5"></div>
+        <div class="letra _2" id="MemoriaMassa_10"></div>
+        <div class="letra _3"></div>
+        <div class="letra _4"></div>
+      </div>
+
+      <div class="coluna C_14">
+        <div class="letra _1" id="MemoriaMassa_11"></div>
+        <div class="letra _2"></div>
+        <div class="letra _3"></div>
+      </div>
+
+      <div class="coluna C_15">
+        <div class="letra _1"></div>
+        <div class="letra _2" id="MemoriaMassa_12"></div>
+        <div class="letra _3"></div>
+        <div class="letra _4"></div>
+        <div class="letra _5"></div>
+        <div class="letra _6"></div>
+      </div>
+
+    </div>
+
+    <div class="perguntas">
+      <h1>Dicas</h1>
+
+      Fabricante: Intel,Produzido em: 2008 Os processadores Intel Core i7 são modelos avançados da linha, ficando atrás
+      apenas dos i9. Quinta, sexta e sétima gerações oferecem de 4 a 8 threads, 2 a 4 núcleos e Cache de 4 ou 6 (5ª) e
+      4,
+      6 ou 8 MB. A partir da oitava geração, os componentes trazem 8, 9 ou 12 MB de Cache, 4 a 6 núcleos e 8 a 12
+      threads
+      – com exceção do i7-8500Y, que conta com 4 MB, 2 núcleos e 4 threads.
+      <input id="input_i7">
+      <button onclick="verificar_14()">Verificar</button>
+      <br>
+
+      Possui esse nome porque tem dois núcleos. É como se ele tivesse dois cérebros trabalhando ao mesmo tempo pra você
+      usar os apps ou realizar qualquer tarefa sem problemas. O processador dual-core é o mais simples atualmente e é
+      recomendado pra rodar jogos bem levinhos e pras tarefas mais básicas.
+      <input id="input_DualCore">
+      <button onclick="verificar_15()">Verificar</button>
+      <br>
+
+      Possui quatro núcleos e trabalha com todos eles ao mesmo tempo, executando várias funções! Ele é uma versão mais
+      potente do que o dual-core e melhora o desempenho na hora de usar vários apps ao mesmo tempo ou rodar jogos
+      pesados
+      com ainda mais velocidade.
+      <input id="input_QuadCore">
+      <button onclick="verificar_16()">Verificar</button>
+      <br>
+
+      Recebe e executa todas as instruções, como uma ordem do que será feito por vez. É como um subsistema
+      dentro do processador, onde os processos irão se dividir em duas ou mais tarefas. Essas tarefas são as threads ou
+      linhas de execução.
+      Como exemplo, um programa que recebe dois números, multiplica um pelo outro e retorna, contém apenas um fluxo de
+      execução. Já um programa que transforma uma imagem em cinza, pode dividir a imagem em 4 quadrantes e processar
+      cada
+      quadrante em um thread (fluxo de execução) para depois retornar a imagem final.
+      <input id="input_threads">
+      <button onclick="verificar_17()">Verificar</button>
+      <br>
+
+      Ela tem o objetivo de guardar dados, informações e processos temporários acessados com frequência e assim agilizar
+      o
+      processo de uso no momento em que são requisitados pelo usuário. Desse modo, a memória cache pode ser considerada
+      um
+      pequeno componente que consta dentro do processador.
+      <input id="input_MemoriaCache">
+      <button onclick="verificar_18()">Verificar</button>
+      <br>
+
+
+    </div>
+  </div>
+</body>
+
+</html>
+<script>
+
+
+  function verificar_1() {
+
+    if (input_cpu.value == "cpu") {
+
+      cpu_1.innerHTML = `C`
+      cpu_2.innerHTML = `P`
+      cpu_3.innerHTML = `U`
+    } else {
+      alert('Infelizmente você deu a resposta errada, tente novamente!')
+    }
+  }
+
+  function verificar_2() {
+
+    if (input_ula.value == "ula") {
+
+      ula_1.innerHTML = `U`
+      ula_2.innerHTML = `L`
+      ula_3.innerHTML = `A`
+    } else {
+      alert('Infelizmente você deu a resposta errada, tente novamente!')
+    }
+  }
+
+  function verificar_3() {
+
+    if (input_registradores.value == "registradores" || input_registradores.value == "registrador") {
+
+      registradores_1.innerHTML = `R`
+      MemoriaMassa_1.innerHTML = `E`
+      registradores_1.innerHTML = `G`
+      registradores_1.innerHTML = `I`
+      registradores_1.innerHTML = `S`
+      registradores_1.innerHTML = `T`
+      registradores_1.innerHTML = `R`
+      registradores_1.innerHTML = `A`
+      registradores_1.innerHTML = `D`
+      registradores_1.innerHTML = `O`
+      registradores_1.innerHTML = `R`
+      registradores_1.innerHTML = `E`
+      registradores_1.innerHTML = `S`
+    } else {
+      alert('Infelizmente você deu a resposta errada, tente novamente!')
+    }
+  }
+
+  function verificar_4() {
+
+    if (input_ram.value == "ram") {
+
+      ram_1.innerHTML = `R`
+      ram_2.innerHTML = `A`
+      ram_3.innerHTML = `M`
+    } else {
+      alert('Infelizmente você deu a resposta errada, tente novamente!')
+    }
+  }
+
+  function verificar_5() {
+
+    if (input_rom.value == "rom") {
+
+      eprom_3.innerHTML = `R`
+      rom_2.innerHTML = `O`
+      rom_3.innerHTML = `M`
+    } else {
+      alert('Infelizmente você deu a resposta errada, tente novamente!')
+    }
+  }
+
+  function verificar_6() {
+
+    if (input_eprom.value == "eprom") {
+      eprom_1.innerHTML = `E`
+      eprom_2.innerHTML = `P`
+      eprom_3.innerHTML = `R`
+      eprom_4.innerHTML = `O`
+      eprom_5.innerHTML = `M`
+    } else {
+      alert('Infelizmente você deu a resposta errada, tente novamente!')
+    }
+  }
+
+  function verificar_7() {
+
+    if (input_flash.value == "flash") {
+
+      flash_1.innerHTML = `F`
+      flash_1.innerHTML = `L`
+      registradores_9.innerHTML = `A`
+      flash_1.innerHTML = `S`
+      flash_1.innerHTML = `H`
+    } else {
+      alert('Infelizmente você deu a resposta errada, tente novamente!')
+    }
+  }
+
+  function verificar_8() {
+
+    if (input_MemoriaMassa.value == "Memoria de massa") {
+
+      ram_3.innerHTML = `M`
+      MemoriaMassa_1.innerHTML = `E`
+      MemoriaMassa_2.innerHTML = `M`
+      MemoriaMassa_3.innerHTML = `O`
+      MemoriaMassa_4.innerHTML = `R`
+      i_7.innerHTML = `I`
+      MemoriaMassa_5.innerHTML = `A`
+      MemoriaMassa_6.innerHTML = `D`
+      MemoriaMassa_7.innerHTML = `E`
+      MemoriaMassa_8.innerHTML = `M`
+      MemoriaMassa_9.innerHTML = `A`
+      MemoriaMassa_10.innerHTML = `S`
+      MemoriaMassa_11.innerHTML = `S`
+      MemoriaMassa_11.innerHTML = `A`
+
+    } else {
+      alert('Infelizmente você deu a resposta errada, tente novamente!')
+    }
+  }
+
+  function verificar_9() {
+    if (input_dma.value == "dma") {
+
+    } else {
+      alert('Infelizmente você deu a resposta errada, tente novamente!')
+
+    }
+  }
+
+  function verificar_10() {
+    if (input_dma.value == "dma") {
+      cs_1.innerHTML = `C`
+      registradores_12.innerHTML = `S`
+    } else {
+      alert('Infelizmente você deu a resposta errada, tente novamente!')
+
+    }
+  }
+
+  function verificar_11() {
+    if (input_dma.value == "Adress Bus") {
+      cs_1.innerHTML = `C`
+      registradores_12.innerHTML = `S`
+    } else {
+      alert('Infelizmente você deu a resposta errada, tente novamente!')
+
+    }
+  }
+</script>
