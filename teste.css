@@ -28,8 +28,8 @@ input{
 
 .geral{
     display: flex;
+    height: 91vh;
     justify-content: space-around;
-
 }
 
 .geral_0{
@@ -139,6 +139,7 @@ h1, h2{
 .C_9 ._2{
     margin-left: 5.7%;
 }
+
 
 
 .C_10 ._2{
