@@ -7,24 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="ver()">Ver questão</button>
-    <div id="frase"></div>
+    <select name="dicas" id="dicas" >
+        <option value="dica1"><button>mostrar1</button></option>
+    </select>
    
 </body>
 </html>
-<script>
-    function ver(){
-        frase.innerHTML=`quantos anos eu tenho <br>
-        <input id="resposta"></input>
-        <button onclick="validar()">validar</button> 
-        `
-    }
-function validar(){
-    if(resposta.value< 0){
-        alert("dados incorretos")
-    }else{
-        alert("legal voce tem uma idade de ser humano")
-        
-    }
-}
-</script>

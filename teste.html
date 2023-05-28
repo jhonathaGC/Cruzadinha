@@ -24,8 +24,18 @@
       <button onclick="mostrar4()">Mostrar dica </button>
       <button onclick="mostrar6()">Mostrar dica</button>
       <button onclick="mostrar7()">Mostrar dica</button>
-      
+      <button onclick="mostrar8()">Mostrar dica</button>
+      <button onclick="mostrar9()">Mostrar dica </button>
+      <button onclick="mostrar10()">Mostrar dica </button>
+      <button onclick="mostrar11()">Mostrar dica </button>
+      <button onclick="mostrar12()">Mostrar dica</button>
+      <button onclick="mostrar13()">Mostrar dica</button>
+      <button onclick="mostrar14()">Mostrar dica </button>
+      <button onclick="mostrar15()">Mostrar dica</button>
+      <button onclick="mostrar16()">Mostrar dica</button>
+
       <div id="frase"></div>
+   
 
     </div>
 
@@ -76,9 +86,9 @@
         <div class="letra _4" id="threads_4"></div>
       </div>
 
-      <div class="coluna C_6">  
+      <div class="coluna C_6">
         <div class="letra _1" id="AdressBus_1"></div>
-        <div class="letra _2" id="AdressBus_2" ></div>
+        <div class="letra _2" id="AdressBus_2"></div>
         <div class="letra _3" id="AdressBus_3"></div>
         <div class="letra _4" id="MemoriaMassa_4"></div>
         <div class="letra _5" id="AdressBus_4"></div>
@@ -98,7 +108,7 @@
         <div class="letra _3" id="ula_1"></div>
         <div class="letra _4" id="DualCore_3"></div>
         <div class="letra _5" id="threads_5"></div>
-       
+
       </div>
 
       <div class="coluna C_8">
@@ -113,8 +123,8 @@
         <div class="letra _2" id="MemoriaMassa_6"></div>
         <div class="letra _3"></div>
         <div class="letra _4"></div>
-        <div class="letra _5"></div>
-        <div class="letra _6" id="ula_3"></div>
+        <div class="letra _5" id="ula_3"></div>
+        <div class="letra _6" ></div>
         <div class="letra _7" id="QuadCore_1"></div>
         <div class="letra _8"></div>
         <div class="letra _9" id="DualCore_5"></div>
@@ -138,7 +148,7 @@
       <div class="coluna C_12">
         <div class="letra _1" id="eprom_4"></div>
         <div class="letra _2" id="MemoriaMassa_9"></div>
-        <div class="letra _3"  id="QuadCore_3"></div>
+        <div class="letra _3" id="QuadCore_3"></div>
         <div class="letra _4" id="cpu_1"></div>
         <div class="letra _5" id="cpu_2"></div>
         <div class="letra _6" id="cpu_3"></div>
@@ -173,143 +183,142 @@
 
 </html>
 <script>
-  function mostrar1(){
-    frase.innerHTML=
-    `responsável por processar todas as principais operações de funcionamento de um computador
+  function mostrar1() {
+    frase.innerHTML =
+      ` <br> responsável por processar todas as principais operações de funcionamento de um computador <br>
       <input id="input_cpu">
       <button onclick="verificar_1()">Verificar</button>`
   }
 
-  function mostrar2(){
-    frase.innerHTML=
-    `Unidade Lógica e Aritmética
+  function mostrar2() {
+    frase.innerHTML =
+      ` <br> Unidade Lógica e Aritmética <br>
       <input id="input_ula">
       <button onclick="verificar_2()">Verificar</button>`
   }
 
-  function mostrar3(){
-    frase.innerHTML=
-    `servem para guardar dados e endereços, atuam como entradas e saídas para as operações da CPU
+  function mostrar3() {
+    frase.innerHTML =
+      ` <br> servem para guardar dados e endereços, atuam como entradas e saídas para as operações da CPU <br>
       <input id="input_registradores">
       <button onclick="verificar_3()">Verificar</button>`
   }
 
-  function mostrar4(){
-    frase.innerHTML=
-    `Componente responsável por dar mais agilidade e velocidade no funcionamento geral do sistema
+  function mostrar4() {
+    frase.innerHTML =
+      ` <br> Componente responsável por dar mais agilidade e velocidade no funcionamento geral do sistema <br>
       <input id="input_ram">
       <button onclick="verificar_4()">Verificar</button>`
   }
 
-  function mostrar5(){
-    frase.innerHTML=
-    `armazena firmwares ou pequenos softwares que funcionam apenas em um hardware específico
+  function mostrar5() {
+    frase.innerHTML =
+      ` <br> armazena firmwares ou pequenos softwares que funcionam apenas em um hardware específico <br>
       <input id="input_rom">
       <button onclick="verificar_5()">Verificar</button>`
   }
 
-  function mostrar6(){
-    frase.innerHTML=
-    `Qarmazena as informações, para serem recuperadas e utilizadas posteriormente, mesmo depois de a alimentação ter
-      sido
-      interrompida.
+  function mostrar6() {
+    frase.innerHTML =
+      ` <br> Qarmazena as informações, para serem recuperadas e utilizadas posteriormente, mesmo depois de a alimentação ter
+      sido interrompida. <br> <br>
       <input id="input_eprom">
       <button onclick="verificar_6()">Verificar</button>`
   }
 
-  function mostrar7(){
-    frase.innerHTML= 
-    ` memória com características muito semelhantes à memória RAM,apenas com o diferencial crucial de ser não volátil.
+  function mostrar7() {
+    frase.innerHTML =
+      `  <br> memória com características muito semelhantes à memória RAM,apenas com o diferencial crucial de ser não volátil. <br>
       <input id="input_flash">
       <button onclick="verificar_7()">Verificar</button>`
   }
 
-  function mostrar8(){
-    frase.innerHTML= 
-    ` memória interna ao medidor onde são armazenadas, ao longo do tempo, em intervalos definidos, grandezas medidas ou
-      calculadas, para posterior acesso
+  function mostrar8() {
+    frase.innerHTML =
+      `  <br> memória interna ao medidor onde são armazenadas, ao longo do tempo, em intervalos definidos, grandezas medidas ou
+      calculadas, para posterior acesso <br>
       <input id="input_MemoriaMassa">
       <button onclick="verificar_8()">Verificar</button>`
   }
 
-  function mostrar9(){
-    frase.innerHTML= 
-    `É o método que permite que um dispositivo de entrada e saída envie ou receba dados
-      diretamente da memória principal, ignorando a CPU, acelerando as operações que envolvem a memória.
+  function mostrar9() {
+    frase.innerHTML =
+      ` <br> É o método que permite que um dispositivo de entrada e saída envie ou receba dados
+      diretamente da memória principal, ignorando a CPU, acelerando as operações que envolvem a memória. <br>
       <input id="input_dma">
       <button onclick="verificar_9()">Verificar</button>`
   }
-  
-  function mostrar10(){
-    frase.innerHTML=
-    `É o nome de uma linha de controle em eletrônica digital usada para
+
+  function mostrar10() {
+    frase.innerHTML =
+      ` <br> É o nome de uma linha de controle em eletrônica digital usada para
       selecionar
       um dos circuitos integrados entre vários conectados ao mesmo barramento de computador, geralmente utilizando a
-      lógica de três estados
+      lógica de três estados <br>
       <input id="input_cs">
       <button onclick="verificar_10()">Verificar</button>`
   }
 
-  function mostrar11(){
-    frase.innerHTML= 
-    `Arquitetura de barramento de computador usada para transferir dados
+  function mostrar11() {
+    frase.innerHTML =
+      ` <br> Arquitetura de barramento de computador usada para transferir dados
       entre dispositivos identificados pelo endereço de hardware da memória física (o endereço físico), que é armazenado
-      na forma de números binários para permitir que o barramento de dados acesse o armazenamento da memória.
+      na forma de números binários para permitir que o barramento de dados acesse o armazenamento da memória. <br>
       <input id="input_AdressBus">
       <button onclick="verificar_11()">Verificar</button>`
   }
 
-  function mostrar12(){
-    frase.innerHTML=
-    `Fabricante: Intel,Produzido em: 2008 Os processadores Intel Core i7 são modelos avançados da linha, ficando atrás
+  function mostrar12() {
+    frase.innerHTML =
+      ` <br> Fabricante: Intel,Produzido em: 2008 Os processadores Intel Core i7 são modelos avançados da linha, ficando atrás
       apenas dos i9. Quinta, sexta e sétima gerações oferecem de 4 a 8 threads, 2 a 4 núcleos e Cache de 4 ou 6 (5ª) e
       4,
       6 ou 8 MB. A partir da oitava geração, os componentes trazem 8, 9 ou 12 MB de Cache, 4 a 6 núcleos e 8 a 12
       threads
-      – com exceção do i7-8500Y, que conta com 4 MB, 2 núcleos e 4 threads.
+      – com exceção do i7-8500Y, que conta com 4 MB, 2 núcleos e 4 threads. <br>
       <input id="input_i7">
       <button onclick="verificar_12()">Verificar</button>`
   }
 
-  function mostrar13(){
-    frase.innerHTML=
-    `Possui esse nome porque tem dois núcleos. É como se ele tivesse dois cérebros trabalhando ao mesmo tempo pra você
+  function mostrar13() {
+    frase.innerHTML =
+      ` <br> Possui esse nome porque tem dois núcleos. É como se ele tivesse dois cérebros trabalhando ao mesmo tempo pra você
       usar os apps ou realizar qualquer tarefa sem problemas. O processador dual-core é o mais simples atualmente e é
-      recomendado pra rodar jogos bem levinhos e pras tarefas mais básicas.
+      recomendado pra rodar jogos bem levinhos e pras tarefas mais básicas. <br>
       <input id="input_DualCore">
       <button onclick="verificar_13()">Verificar</button>`
   }
 
-  function mostrar14(){
-    frase.innerHTML=
-    `Possui quatro núcleos e trabalha com todos eles ao mesmo tempo, executando várias funções! Ele é uma versão mais
+  function mostrar14() {
+    frase.innerHTML =
+      ` <br> Possui quatro núcleos e trabalha com todos eles ao mesmo tempo, executando várias funções! Ele é uma versão mais
       potente do que o dual-core e melhora o desempenho na hora de usar vários apps ao mesmo tempo ou rodar jogos
       pesados
-      com ainda mais velocidade.
+      com ainda mais velocidade. <br>
       <input id="input_QuadCore">
       <button onclick="verificar_14()">Verificar</button>`
   }
 
-  function mostrar15(){
-    frase.innerHTML=
-    `Recebe e executa todas as instruções, como uma ordem do que será feito por vez. É como um subsistema
+  function mostrar15() {
+    frase.innerHTML =
+      ` <br> Recebe e executa todas as instruções, como uma ordem do que será feito por vez. É como um subsistema
       dentro do processador, onde os processos irão se dividir em duas ou mais tarefas. Essas tarefas são as threads ou
       linhas de execução.
       Como exemplo, um programa que recebe dois números, multiplica um pelo outro e retorna, contém apenas um fluxo de
       execução. Já um programa que transforma uma imagem em cinza, pode dividir a imagem em 4 quadrantes e processar
       cada
-      quadrante em um thread (fluxo de execução) para depois retornar a imagem final.
+      quadrante em um thread (fluxo de execução) para depois retornar a imagem final. <br>
       <input id="input_threads">
       <button onclick="verificar_15()">Verificar</button>`
   }
 
-  function mostrar16(){
-    frase.innerHTML=
-    `Ela tem o objetivo de guardar dados, informações e processos temporários acessados com frequência e assim agilizar
+  function mostrar16() {
+    frase.innerHTML =
+      ` <br> Ela tem o objetivo de guardar dados, informações e processos temporários acessados com frequência e assim agilizar
       o
       processo de uso no momento em que são requisitados pelo usuário. Desse modo, a memória cache pode ser considerada
       um
-      pequeno componente que consta dentro do processador.
+      pequeno componente que consta dentro do processador. <br>
       <input id="input_MemoriaCache">
       <button onclick="verificar_16()">Verificar</button>`
   }
@@ -321,8 +330,9 @@
       cpu_1.innerHTML = `C`
       cpu_2.innerHTML = `P`
       cpu_3.innerHTML = `U`
+      frase.innerHTML = `<br><img src="acertou.png" alt="">`
     } else {
-      alert('Infelizmente você deu a resposta errada, tente novamente!')
+      frase.innerHTML = `<br><img src="errou.png" alt="">`
     }
   }
 
@@ -437,9 +447,9 @@
 
   function verificar_9() {
     if (input_dma.value == "dma") {
-      dma_1.innerHTML=`D`
-      dma_2.innerHTML=`M`
-      dma_3.innerHTML=`A`
+      dma_1.innerHTML = `D`
+      dma_2.innerHTML = `M`
+      dma_3.innerHTML = `A`
     } else {
       alert('Infelizmente você deu a resposta errada, tente novamente!')
 
@@ -458,84 +468,84 @@
 
   function verificar_11() {
     if (input_dma.value == "Adress Bus") {
-      AdressBus_1.innerHTML=`A`
-      AdressBus_2.innerHTML=`D`
-      AdressBus_3.innerHTML=`R`
-      MemoriaMassa_4.innerHTML=`E`
-      AdressBus_4.innerHTML=`S`
-      AdressBus_5.innerHTML=`S`
-      AdressBus_6.innerHTML=`B`
-      AdressBus_7.innerHTML=`U`
-      AdressBus_8.innerHTML=`S`
-      
+      AdressBus_1.innerHTML = `A`
+      AdressBus_2.innerHTML = `D`
+      AdressBus_3.innerHTML = `R`
+      MemoriaMassa_4.innerHTML = `E`
+      AdressBus_4.innerHTML = `S`
+      AdressBus_5.innerHTML = `S`
+      AdressBus_6.innerHTML = `B`
+      AdressBus_7.innerHTML = `U`
+      AdressBus_8.innerHTML = `S`
+
     } else {
       alert('Infelizmente você deu a resposta errada, tente novamente!')
 
     }
   }
 
-  function verificar12(){
-    if(input.i7.value == "i7"){
-      i7.innerHTML=`I`
-      i7_7.innerHTML=`7`
-    }else {
+  function verificar12() {
+    if (input.i7.value == "i7") {
+      i7.innerHTML = `I`
+      i7_7.innerHTML = `7`
+    } else {
       alert('Infelizmente você deu a resposta errada, tente novamente!')
 
     }
   }
 
-  function verificar13(){
-    if(input_DualCore.value == "Dual core"){
-      registradores_8.innerHTML=`D`
-      DualCore_0.innerHTML=`U`
-      DualCore_1.innerHTML=`A`
-      DualCore_2.innerHTML=`L`
-      DualCore_3.innerHTML=`C`
-      DualCore_4.innerHTML=`O`
-      DualCore_5.innerHTML=`R`
-      DualCore_6.innerHTML=`E`
-    }else {
+  function verificar13() {
+    if (input_DualCore.value == "Dual core") {
+      registradores_8.innerHTML = `D`
+      DualCore_0.innerHTML = `U`
+      DualCore_1.innerHTML = `A`
+      DualCore_2.innerHTML = `L`
+      DualCore_3.innerHTML = `C`
+      DualCore_4.innerHTML = `O`
+      DualCore_5.innerHTML = `R`
+      DualCore_6.innerHTML = `E`
+    } else {
       alert('Infelizmente você deu a resposta errada, tente novamente!')
 
     }
   }
 
-  function verificar14(){
-    if(input_QuadCore.value == "Quad core"){
-      cpu_1.innerHTML=`Q`
-      QuadCore_0.innerHTML=`U`
-      QuadCore_1.innerHTML=`A`
-      QuadCore_2.innerHTML=`D`
-      QuadCore_3.innerHTML=`C`
-      QuadCore_4.innerHTML=`O`
-      QuadCore_5.innerHTML=`R`
-      QuadCore_6.innerHTML=`E`
-    }else {
+  function verificar14() {
+    if (input_QuadCore.value == "Quad core") {
+      cpu_1.innerHTML = `Q`
+      QuadCore_0.innerHTML = `U`
+      QuadCore_1.innerHTML = `A`
+      QuadCore_2.innerHTML = `D`
+      QuadCore_3.innerHTML = `C`
+      QuadCore_4.innerHTML = `O`
+      QuadCore_5.innerHTML = `R`
+      QuadCore_6.innerHTML = `E`
+    } else {
       alert('Infelizmente você deu a resposta errada, tente novamente!')
 
     }
   }
 
-  function verificar_15(){
-    if(input_threads.value == 'threads'){
-      threads_1.innerHTML=`T`
-      threads_2.innerHTML=`H`
-      registradores_10.innerHTML=`R`
-      threads_3.innerHTML=`E`
-      threads_4.innerHTML=`A`
-      dma_1.innerHTML=`D`
-      threads_5.innerHTML=`S`
+  function verificar_15() {
+    if (input_threads.value == 'threads') {
+      threads_1.innerHTML = `T`
+      threads_2.innerHTML = `H`
+      registradores_10.innerHTML = `R`
+      threads_3.innerHTML = `E`
+      threads_4.innerHTML = `A`
+      dma_1.innerHTML = `D`
+      threads_5.innerHTML = `S`
     }
   }
 
-  function verificar16(){
-    if(input_MemoriaCache.value == 'Memoria chache' || input_MemoriaCache.value == 'cache'){
-      cache_1.innerHTML=`C`
-      MemoriaMassa_12.innerHTML=`A`
-      cache_2.innerHTML=`C`
-      cache_3.innerHTML=`H`
-      cache_4.innerHTML=`E`
-    
+  function verificar16() {
+    if (input_MemoriaCache.value == 'Memoria chache' || input_MemoriaCache.value == 'cache') {
+      cache_1.innerHTML = `C`
+      MemoriaMassa_12.innerHTML = `A`
+      cache_2.innerHTML = `C`
+      cache_3.innerHTML = `H`
+      cache_4.innerHTML = `E`
+
     }
   }
 </script>

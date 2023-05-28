@@ -29,7 +29,9 @@ input{
 .geral{
     display: flex;
     height: 91vh;
-    justify-content: space-around;
+    justify-content: space-between;
+    color: white;
+
 }
 
 .geral_0{
@@ -41,11 +43,15 @@ input{
 .perguntas button, input{
    background: transparent;
    border-style: outset;
+   color: white; 
 }
 .perguntas{
     width: 33.3%;
+    padding-top: 10%;
+    padding-left: 2% ;
 }
 h1, h2{
+    
     text-align: center;
 }
 
