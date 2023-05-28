@@ -16,7 +16,8 @@
   <div class="geral">
     <div class="perguntas">
 
-      <h1>Dicas</h1>
+      <h1>Escolha uma dica</h1>
+      <h2>Vamos ver se pelo menos assim você acerta algum</h2>
 
       <button onclick="mostrar1()">Mostrar dica</button>
       <button onclick="mostrar2()">Mostrar dica </button>
@@ -33,9 +34,10 @@
       <button onclick="mostrar14()">Mostrar dica </button>
       <button onclick="mostrar15()">Mostrar dica</button>
       <button onclick="mostrar16()">Mostrar dica</button>
+      <button onclick="mostrar17()">Mostrar dica</button>
 
       <div id="frase"></div>
-   
+
 
     </div>
 
@@ -74,7 +76,7 @@
 
       <div class="coluna C_4">
         <div class="letra _1" id="MemoriaMassa_2"></div>
-        <div class="letra _2" id="DualCore_1"></div>
+        <div class="letra _2" id="i5_1"></div>
         <div class="letra _3" id="flash_3"></div>
         <div class="letra _4" id="DualCore_0"></div>
         <div class="letra _5" id="threads_3"></div>
@@ -124,7 +126,7 @@
         <div class="letra _3"></div>
         <div class="letra _4"></div>
         <div class="letra _5" id="ula_3"></div>
-        <div class="letra _6" ></div>
+        <div class="letra _6"></div>
         <div class="letra _7" id="QuadCore_1"></div>
         <div class="letra _8"></div>
         <div class="letra _9" id="DualCore_5"></div>
@@ -175,9 +177,7 @@
         <div class="letra _5" id="cache_4"></div>
         <div class="letra _6" id="QuadCore_6"></div>
       </div>
-
     </div>
-
   </div>
 </body>
 
@@ -323,6 +323,13 @@
       <button onclick="verificar_16()">Verificar</button>`
   }
 
+  function mostrar17(){
+    frase.innerHTML= 
+    ` <br> Terceiro melhor processador criado pela Intel <br>
+    <input id="input_i5">
+    <button onclick="verificar17()">Verificar</button>`
+  }
+
   function verificar_1() {
 
     if (input_cpu.value == "cpu") {
@@ -343,8 +350,9 @@
       ula_1.innerHTML = `U`
       ula_2.innerHTML = `L`
       ula_3.innerHTML = `A`
+      frase.innerHTML = `<br><img src="acertou.png" alt="">`
     } else {
-      alert('Infelizmente você deu a resposta errada, tente novamente!')
+      frase.innerHTML = `<br><img src="errou.png" alt="">`
     }
   }
 
@@ -365,8 +373,9 @@
       registradores_1.innerHTML = `R`
       registradores_1.innerHTML = `E`
       registradores_1.innerHTML = `S`
+      frase.innerHTML = `<br><img src="acertou.png" alt="">`
     } else {
-      alert('Infelizmente você deu a resposta errada, tente novamente!')
+      frase.innerHTML = `<br><img src="errou.png" alt="">`
     }
   }
 
@@ -377,8 +386,9 @@
       ram_1.innerHTML = `R`
       ram_2.innerHTML = `A`
       ram_3.innerHTML = `M`
+      frase.innerHTML = `<br><img src="acertou.png" alt="">`
     } else {
-      alert('Infelizmente você deu a resposta errada, tente novamente!')
+      frase.innerHTML = `<br><img src="errou.png" alt="">`
     }
   }
 
@@ -389,8 +399,9 @@
       eprom_3.innerHTML = `R`
       rom_2.innerHTML = `O`
       rom_3.innerHTML = `M`
+      frase.innerHTML = `<br><img src="acertou.png" alt="">`
     } else {
-      alert('Infelizmente você deu a resposta errada, tente novamente!')
+      frase.innerHTML = `<br><img src="errou.png" alt="">`
     }
   }
 
@@ -402,8 +413,9 @@
       eprom_3.innerHTML = `R`
       eprom_4.innerHTML = `O`
       eprom_5.innerHTML = `M`
+      frase.innerHTML = `<br><img src="acertou.png" alt="">`
     } else {
-      alert('Infelizmente você deu a resposta errada, tente novamente!')
+      frase.innerHTML = `<br><img src="errou.png" alt="">`
     }
   }
 
@@ -416,8 +428,9 @@
       registradores_9.innerHTML = `A`
       flash_1.innerHTML = `S`
       flash_1.innerHTML = `H`
+      frase.innerHTML = `<br><img src="acertou.png" alt="">`
     } else {
-      alert('Infelizmente você deu a resposta errada, tente novamente!')
+      frase.innerHTML = `<br><img src="errou.png" alt="">`
     }
   }
 
@@ -440,8 +453,9 @@
       MemoriaMassa_11.innerHTML = `S`
       MemoriaMassa_11.innerHTML = `A`
 
+      frase.innerHTML = `<br><img src="acertou.png" alt="">`
     } else {
-      alert('Infelizmente você deu a resposta errada, tente novamente!')
+      frase.innerHTML = `<br><img src="errou.png" alt="">`
     }
   }
 
@@ -450,9 +464,9 @@
       dma_1.innerHTML = `D`
       dma_2.innerHTML = `M`
       dma_3.innerHTML = `A`
+      frase.innerHTML = `<br><img src="acertou.png" alt="">`
     } else {
-      alert('Infelizmente você deu a resposta errada, tente novamente!')
-
+      frase.innerHTML = `<br><img src="errou.png" alt="">`
     }
   }
 
@@ -460,9 +474,9 @@
     if (input_cs.value == "CS") {
       cs_1.innerHTML = `C`
       registradores_12.innerHTML = `S`
+      frase.innerHTML = `<br><img src="acertou.png" alt="">`
     } else {
-      alert('Infelizmente você deu a resposta errada, tente novamente!')
-
+      frase.innerHTML = `<br><img src="errou.png" alt="">`
     }
   }
 
@@ -478,9 +492,9 @@
       AdressBus_7.innerHTML = `U`
       AdressBus_8.innerHTML = `S`
 
+      frase.innerHTML = `<br><img src="acertou.png" alt="">`
     } else {
-      alert('Infelizmente você deu a resposta errada, tente novamente!')
-
+      frase.innerHTML = `<br><img src="errou.png" alt="">`
     }
   }
 
@@ -488,9 +502,9 @@
     if (input.i7.value == "i7") {
       i7.innerHTML = `I`
       i7_7.innerHTML = `7`
+      frase.innerHTML = `<br><img src="acertou.png" alt="">`
     } else {
-      alert('Infelizmente você deu a resposta errada, tente novamente!')
-
+      frase.innerHTML = `<br><img src="errou.png" alt="">`
     }
   }
 
@@ -504,9 +518,9 @@
       DualCore_4.innerHTML = `O`
       DualCore_5.innerHTML = `R`
       DualCore_6.innerHTML = `E`
+      frase.innerHTML = `<br><img src="acertou.png" alt="">`
     } else {
-      alert('Infelizmente você deu a resposta errada, tente novamente!')
-
+      frase.innerHTML = `<br><img src="errou.png" alt="">`
     }
   }
 
@@ -520,9 +534,9 @@
       QuadCore_4.innerHTML = `O`
       QuadCore_5.innerHTML = `R`
       QuadCore_6.innerHTML = `E`
+      frase.innerHTML = `<br><img src="acertou.png" alt="">`
     } else {
-      alert('Infelizmente você deu a resposta errada, tente novamente!')
-
+      frase.innerHTML = `<br><img src="errou.png" alt="">`
     }
   }
 
@@ -535,17 +549,33 @@
       threads_4.innerHTML = `A`
       dma_1.innerHTML = `D`
       threads_5.innerHTML = `S`
+      frase.innerHTML = `<br><img src="acertou.png" alt="">`
+    } else {
+      frase.innerHTML = `<br><img src="errou.png" alt="">`
     }
   }
 
   function verificar16() {
+    
     if (input_MemoriaCache.value == 'Memoria chache' || input_MemoriaCache.value == 'cache') {
       cache_1.innerHTML = `C`
       MemoriaMassa_12.innerHTML = `A`
       cache_2.innerHTML = `C`
       cache_3.innerHTML = `H`
       cache_4.innerHTML = `E`
+      frase.innerHTML = `<br><img src="acertou.png" alt="">`
+    } else {
+      frase.innerHTML = `<br><img src="errou.png" alt="">`
+    }
+  }
 
+  function verificar17(){
+    if(input_i5.value == "i5"){
+      registradores_3.innerHTML=`I`
+      i5_1.innerHTML=`5`
+      frase.innerHTML = `<br><img src="acertou.png" alt="">`
+    } else {
+      frase.innerHTML = `<br><img src="errou.png" alt="">`
     }
   }
 </script>
