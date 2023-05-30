@@ -11,6 +11,11 @@
 
 <body>
 
+  <audio autoplay> 
+    <source src="minony-xd-finalnaya-pesenka.mp3" type="audio/mpeg">
+    <source src="minony-banana.mp3" type="audio/mpeg">
+  </audio>
+
   <h1>Teste o seu conhecimento</h1>
   <h2>isto é, caso você tenha algum</h2>
   <div class="geral">
@@ -19,22 +24,38 @@
       <h1>Escolha uma dica</h1>
       <h2>Vamos ver se pelo menos assim você acerta algum</h2>
 
-      <button onclick="mostrar1()">Mostrar dica</button>
-      <button onclick="mostrar2()">Mostrar dica </button>
-      <button onclick="mostrar3()">Mostrar dica </button>
-      <button onclick="mostrar4()">Mostrar dica </button>
-      <button onclick="mostrar6()">Mostrar dica</button>
-      <button onclick="mostrar7()">Mostrar dica</button>
-      <button onclick="mostrar8()">Mostrar dica</button>
-      <button onclick="mostrar9()">Mostrar dica </button>
-      <button onclick="mostrar10()">Mostrar dica </button>
-      <button onclick="mostrar11()">Mostrar dica </button>
-      <button onclick="mostrar12()">Mostrar dica</button>
-      <button onclick="mostrar13()">Mostrar dica</button>
-      <button onclick="mostrar14()">Mostrar dica </button>
-      <button onclick="mostrar15()">Mostrar dica</button>
-      <button onclick="mostrar16()">Mostrar dica</button>
-      <button onclick="mostrar17()">Mostrar dica</button>
+      <div class="dicasGerais">
+        <div class="dicas">
+          <button onclick="mostrar1()"> dica 1</button>
+          <button onclick="mostrar2()"> dica 2</button>
+          <button onclick="mostrar3()"> dica 3</button>
+        </div>
+        <div class="dicas">
+          <button onclick="mostrar4()"> dica 4</button>
+          <button onclick="mostrar5()"> dica 5</button>
+          <button onclick="mostrar6()"> dica 6</button>
+        </div>
+        <div class="dicas">
+          <button onclick="mostrar7()"> dica 7</button>
+          <button onclick="mostrar8()"> dica 8</button>
+          <button onclick="mostrar9()"> dica 9</button>
+        </div>
+        <div class="dicas">
+          <button onclick="mostrar10()"> dica 10</button>
+          <button onclick="mostrar11()"> dica 11</button>
+          <button onclick="mostrar12()"> dica 12</button>
+        </div>
+        <div class="dicas">
+          <button onclick="mostrar13()"> dica 13</button>
+          <button onclick="mostrar14()"> dica 14</button>
+          <button onclick="mostrar15()"> dica 15</button>
+        </div>
+        <div class="dicas">
+          <button onclick="mostrar16()"> dica 16</button>
+          <button onclick="mostrar17()"> dica 17</button>
+          <button onclick="mostrar18()"> dica 18</button>
+        </div>
+      </div>
 
       <div id="frase"></div>
 
@@ -123,12 +144,12 @@
       <div class="coluna C_9">
         <div class="letra _1" id="eprom_1"></div>
         <div class="letra _2" id="MemoriaMassa_6"></div>
-        <div class="letra _3"></div>
-        <div class="letra _4"></div>
+        <div class="letra _3" id="DataBus_1"></div>
+        <div class="letra _4" id="DataBus_2"></div>
         <div class="letra _5" id="ula_3"></div>
-        <div class="letra _6"></div>
+        <div class="letra _6" id="DataBus_3"></div>
         <div class="letra _7" id="QuadCore_1"></div>
-        <div class="letra _8"></div>
+        <div class="letra _8" id="DataBus_4"></div>
         <div class="letra _9" id="DualCore_5"></div>
       </div>
 
@@ -143,7 +164,7 @@
         <div class="letra _1" id="eprom_3"></div>
         <div class="letra _2" id="rom_1"></div>
         <div class="letra _3" id="MemoriaMassa_8"></div>
-        <div class="letra _4" id="QuadCore_0"></div>
+        <div class="letra _4" id="QuadCore_0_0"></div>
 
       </div>
 
@@ -237,7 +258,7 @@
     frase.innerHTML =
       `  <br> memória interna ao medidor onde são armazenadas, ao longo do tempo, em intervalos definidos, grandezas medidas ou
       calculadas, para posterior acesso <br>
-      <input id="input_MemoriaMassa">
+      <input id="input_memoriamassa">
       <button onclick="verificar_8()">Verificar</button>`
   }
 
@@ -323,11 +344,18 @@
       <button onclick="verificar_16()">Verificar</button>`
   }
 
-  function mostrar17(){
-    frase.innerHTML= 
-    ` <br> Terceiro melhor processador criado pela Intel <br>
+  function mostrar17() {
+    frase.innerHTML =
+      ` <br> Terceiro melhor processador criado pela Intel <br>
     <input id="input_i5">
-    <button onclick="verificar17()">Verificar</button>`
+    <button onclick="verificar_17()">Verificar</button>`
+  }
+
+  function mostrar18() {
+    frase.innerHTML =
+      ` <br> barramento de dados é um sistema dentro de um computador ou dispositivo, consistindo de um conector ou conjunto de fios, que fornece transporte para dados. Diferentes tipos de barramentos de dados evoluíram junto com computadores pessoais e outras peças de hardware. <br>
+    <input id="input_DataBus">
+    <button onclick="verificar_18()">Verificar</button>`
   }
 
   function verificar_1() {
@@ -337,7 +365,8 @@
       cpu_1.innerHTML = `C`
       cpu_2.innerHTML = `P`
       cpu_3.innerHTML = `U`
-      frase.innerHTML = `<br><img src="acertou.png" alt="">`
+      frase.innerHTML = `<br><img src="acertou.png" alt="">
+      `
     } else {
       frase.innerHTML = `<br><img src="errou.png" alt="">`
     }
@@ -362,17 +391,17 @@
 
       registradores_1.innerHTML = `R`
       MemoriaMassa_1.innerHTML = `E`
-      registradores_1.innerHTML = `G`
-      registradores_1.innerHTML = `I`
-      registradores_1.innerHTML = `S`
-      registradores_1.innerHTML = `T`
-      registradores_1.innerHTML = `R`
-      registradores_1.innerHTML = `A`
-      registradores_1.innerHTML = `D`
-      registradores_1.innerHTML = `O`
-      registradores_1.innerHTML = `R`
-      registradores_1.innerHTML = `E`
-      registradores_1.innerHTML = `S`
+      registradores_2.innerHTML = `G`
+      registradores_3.innerHTML = `I`
+      registradores_4.innerHTML = `S`
+      registradores_5.innerHTML = `T`
+      registradores_6.innerHTML = `R`
+      registradores_7.innerHTML = `A`
+      registradores_8.innerHTML = `D`
+      registradores_9.innerHTML = `O`
+      registradores_10.innerHTML = `R`
+      registradores_11.innerHTML = `E`
+      registradores_12.innerHTML = `S`
       frase.innerHTML = `<br><img src="acertou.png" alt="">`
     } else {
       frase.innerHTML = `<br><img src="errou.png" alt="">`
@@ -397,8 +426,8 @@
     if (input_rom.value == "rom") {
 
       eprom_3.innerHTML = `R`
-      rom_2.innerHTML = `O`
-      rom_3.innerHTML = `M`
+      rom_1.innerHTML = `O`
+      MemoriaMassa_8.innerHTML = `M`
       frase.innerHTML = `<br><img src="acertou.png" alt="">`
     } else {
       frase.innerHTML = `<br><img src="errou.png" alt="">`
@@ -424,10 +453,10 @@
     if (input_flash.value == "flash") {
 
       flash_1.innerHTML = `F`
-      flash_1.innerHTML = `L`
-      registradores_9.innerHTML = `A`
-      flash_1.innerHTML = `S`
-      flash_1.innerHTML = `H`
+      flash_2.innerHTML = `L`
+      registradores_7.innerHTML = `A`
+      flash_3.innerHTML = `S`
+      flash_4.innerHTML = `H`
       frase.innerHTML = `<br><img src="acertou.png" alt="">`
     } else {
       frase.innerHTML = `<br><img src="errou.png" alt="">`
@@ -436,13 +465,13 @@
 
   function verificar_8() {
 
-    if (input_MemoriaMassa.value == "Memoria de massa") {
+    if (input_memoriamassa.value == "memoria de massa") {
 
       ram_3.innerHTML = `M`
       MemoriaMassa_1.innerHTML = `E`
       MemoriaMassa_2.innerHTML = `M`
       MemoriaMassa_3.innerHTML = `O`
-      MemoriaMassa_4.innerHTML = `R`
+      AdressBus_3.innerHTML = `R`
       i_7.innerHTML = `I`
       MemoriaMassa_5.innerHTML = `A`
       MemoriaMassa_6.innerHTML = `D`
@@ -471,7 +500,7 @@
   }
 
   function verificar_10() {
-    if (input_cs.value == "CS") {
+    if (input_cs.value == "cs") {
       cs_1.innerHTML = `C`
       registradores_12.innerHTML = `S`
       frase.innerHTML = `<br><img src="acertou.png" alt="">`
@@ -481,7 +510,7 @@
   }
 
   function verificar_11() {
-    if (input_dma.value == "Adress Bus") {
+    if (input_AdressBus.value == "adress bus") {
       AdressBus_1.innerHTML = `A`
       AdressBus_2.innerHTML = `D`
       AdressBus_3.innerHTML = `R`
@@ -498,9 +527,9 @@
     }
   }
 
-  function verificar12() {
-    if (input.i7.value == "i7") {
-      i7.innerHTML = `I`
+  function verificar_12() {
+    if (input_i7.value == "i7") {
+      i_7.innerHTML = `I`
       i7_7.innerHTML = `7`
       frase.innerHTML = `<br><img src="acertou.png" alt="">`
     } else {
@@ -508,8 +537,8 @@
     }
   }
 
-  function verificar13() {
-    if (input_DualCore.value == "Dual core") {
+  function verificar_13() {
+    if (input_DualCore.value == "dual core") {
       registradores_8.innerHTML = `D`
       DualCore_0.innerHTML = `U`
       DualCore_1.innerHTML = `A`
@@ -524,13 +553,13 @@
     }
   }
 
-  function verificar14() {
-    if (input_QuadCore.value == "Quad core") {
-      cpu_1.innerHTML = `Q`
-      QuadCore_0.innerHTML = `U`
-      QuadCore_1.innerHTML = `A`
-      QuadCore_2.innerHTML = `D`
-      QuadCore_3.innerHTML = `C`
+  function verificar_14() {
+    if (input_QuadCore.value == "quad core") {
+      QuadCore_0.innerHTML = `Q`
+      QuadCore_1.innerHTML = `U`
+      QuadCore_2.innerHTML = `A`
+      QuadCore_0_0.innerHTML = `D`
+      cpu_1.innerHTML = `C`
       QuadCore_4.innerHTML = `O`
       QuadCore_5.innerHTML = `R`
       QuadCore_6.innerHTML = `E`
@@ -555,8 +584,8 @@
     }
   }
 
-  function verificar16() {
-    
+  function verificar_16() {
+
     if (input_MemoriaCache.value == 'Memoria chache' || input_MemoriaCache.value == 'cache') {
       cache_1.innerHTML = `C`
       MemoriaMassa_12.innerHTML = `A`
@@ -569,13 +598,30 @@
     }
   }
 
-  function verificar17(){
-    if(input_i5.value == "i5"){
-      registradores_3.innerHTML=`I`
-      i5_1.innerHTML=`5`
+  function verificar_17() {
+    if (input_i5.value == "i5") {
+      registradores_3.innerHTML = `I`
+      i5_1.innerHTML = `5`
       frase.innerHTML = `<br><img src="acertou.png" alt="">`
     } else {
       frase.innerHTML = `<br><img src="errou.png" alt="">`
     }
   }
+
+  function verificar_18() {
+    if (input_DataBus.value == "data bus" || input_DataBus.value == "Data Bus") {
+      MemoriaMassa_6.innerHTML = `D`
+      DataBus_1.innerHTML = `A`
+      DataBus_2.innerHTML = `T`
+      ula_3.innerHTML = `A`
+      DataBus_3.innerHTML = `B`
+      QuadCore_1.innerHTML = `U`
+      DataBus_4.innerHTML = `S`
+      registradores_3.innerHTML = `I`
+      frase.innerHTML = `<br><img src="acertou.png" alt="">`
+    } else {
+      frase.innerHTML = `<br><img src="errou.png" alt="">`
+    }
+  }
+
 </script>

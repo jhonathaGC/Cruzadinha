@@ -19,13 +19,22 @@ input{
     text-transform: uppercase;
 }
 .letra{
-        width: 4.5%;
-        height: 2vh;
-        border-style: outset;
-        text-align: center;
+    width: 4.5%;
+    height: 2vh;
+    border-style: outset;
+    text-align: center;
+}
+.dicasGerais{
+    margin-top: 2%;
+    display: flex;
     
 }
-
+.dicas{
+    align-items: center;
+}
+.dicas button{
+    margin: 3%;
+}
 .geral{
     display: flex;
     height: 91vh;
