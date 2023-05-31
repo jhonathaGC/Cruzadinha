@@ -56,6 +56,8 @@
           <button onclick="mostrar18()"> dica 18</button>
         </div>
       </div>
+        <input type="text" value="" id="input_Verificageral">
+      <button id="button_geral" onclick="Verificacao_geral()">Verificar</button>
 
       <div id="frase"></div>
 
@@ -204,6 +206,178 @@
 
 </html>
 <script>
+  
+   function Verificacao_geral(){
+
+   var tempo=  setTimeout(proxima, 4000)
+
+    if (input_Verificageral.value == "cpu") {
+
+cpu_1.innerHTML = `C`
+cpu_2.innerHTML = `P`
+cpu_3.innerHTML = `U`
+frase.innerHTML = `<br><img src="acertou.png" alt="">`
+
+} else if(input_Verificageral.value == "ula") {
+
+ula_1.innerHTML = `U`
+ula_2.innerHTML = `L`
+ula_3.innerHTML = `A`
+frase.innerHTML = `<br><img src="acertou.png" alt="">`
+} else if (input_Verificageral.value == "registradores" || input_Verificageral.value == "registrador") {
+
+registradores_1.innerHTML = `R`
+MemoriaMassa_1.innerHTML = `E`
+registradores_2.innerHTML = `G`
+registradores_3.innerHTML = `I`
+registradores_4.innerHTML = `S`
+registradores_5.innerHTML = `T`
+registradores_6.innerHTML = `R`
+registradores_7.innerHTML = `A`
+registradores_8.innerHTML = `D`
+registradores_9.innerHTML = `O`
+registradores_10.innerHTML = `R`
+registradores_11.innerHTML = `E`
+registradores_12.innerHTML = `S`
+frase.innerHTML = `<br><img src="acertou.png" alt="">`
+} else if (input_Verificageral.value == "ram") {
+
+ram_1.innerHTML = `R`
+ram_2.innerHTML = `A`
+ram_3.innerHTML = `M`
+frase.innerHTML = `<br><img src="acertou.png" alt="">`
+} else if (input_Verificageral.value == "rom") {
+
+eprom_3.innerHTML = `R`
+rom_1.innerHTML = `O`
+MemoriaMassa_8.innerHTML = `M`
+frase.innerHTML = `<br><img src="acertou.png" alt="">`
+} else if (input_Verificageral.value == "eprom") {
+      eprom_1.innerHTML = `E`
+      eprom_2.innerHTML = `P`
+      eprom_3.innerHTML = `R`
+      eprom_4.innerHTML = `O`
+      eprom_5.innerHTML = `M`
+      frase.innerHTML = `<br><img src="acertou.png" alt="">`
+    } else if (input_Verificageral.value == "flash") {
+
+flash_1.innerHTML = `F`
+flash_2.innerHTML = `L`
+registradores_7.innerHTML = `A`
+flash_3.innerHTML = `S`
+flash_4.innerHTML = `H`
+frase.innerHTML = `<br><img src="acertou.png" alt="">`
+} else if (input_Verificageral.value == "memoria de massa") {
+
+ram_3.innerHTML = `M`
+MemoriaMassa_1.innerHTML = `E`
+MemoriaMassa_2.innerHTML = `M`
+MemoriaMassa_3.innerHTML = `O`
+AdressBus_3.innerHTML = `R`
+i_7.innerHTML = `I`
+MemoriaMassa_5.innerHTML = `A`
+MemoriaMassa_6.innerHTML = `D`
+MemoriaMassa_7.innerHTML = `E`
+MemoriaMassa_8.innerHTML = `M`
+MemoriaMassa_9.innerHTML = `A`
+MemoriaMassa_10.innerHTML = `S`
+MemoriaMassa_11.innerHTML = `S`
+MemoriaMassa_11.innerHTML = `A`
+
+frase.innerHTML = `<br><img src="acertou.png" alt="">`
+} else if (input_Verificageral.value == "dma") {
+      dma_1.innerHTML = `D`
+      dma_2.innerHTML = `M`
+      dma_3.innerHTML = `A`
+      frase.innerHTML = `<br><img src="acertou.png" alt="">`
+    } else if (input_Verificageral.value == "cs") {
+      cs_1.innerHTML = `C`
+      registradores_12.innerHTML = `S`
+      frase.innerHTML = `<br><img src="acertou.png" alt="">`
+    } else  if (input_Verificageral.value == "adress bus") {
+      AdressBus_1.innerHTML = `A`
+      AdressBus_2.innerHTML = `D`
+      AdressBus_3.innerHTML = `R`
+      MemoriaMassa_4.innerHTML = `E`
+      AdressBus_4.innerHTML = `S`
+      AdressBus_5.innerHTML = `S`
+      AdressBus_6.innerHTML = `B`
+      AdressBus_7.innerHTML = `U`
+      AdressBus_8.innerHTML = `S`
+
+      frase.innerHTML = `<br><img src="acertou.png" alt="">`
+    } else if (input_Verificageral.value == "i7") {
+      i_7.innerHTML = `I`
+      i7_7.innerHTML = `7`
+      frase.innerHTML = `<br><img src="acertou.png" alt="">`
+    } else  if (input_Verificageral.value == "dual core") {
+      registradores_8.innerHTML = `D`
+      DualCore_0.innerHTML = `U`
+      DualCore_1.innerHTML = `A`
+      DualCore_2.innerHTML = `L`
+      DualCore_3.innerHTML = `C`
+      DualCore_4.innerHTML = `O`
+      DualCore_5.innerHTML = `R`
+      DualCore_6.innerHTML = `E`
+      frase.innerHTML = `<br><img src="acertou.png" alt="">`
+    } else  if (input_Verificageral.value == "quad core") {
+      QuadCore_0.innerHTML = `Q`
+      QuadCore_1.innerHTML = `U`
+      QuadCore_2.innerHTML = `A`
+      QuadCore_0_0.innerHTML = `D`
+      cpu_1.innerHTML = `C`
+      QuadCore_4.innerHTML = `O`
+      QuadCore_5.innerHTML = `R`
+      QuadCore_6.innerHTML = `E`
+      frase.innerHTML = `<br><img src="acertou.png" alt="">`
+    } else if (input_Verificageral.value == 'threads') {
+      threads_1.innerHTML = `T`
+      threads_2.innerHTML = `H`
+      registradores_10.innerHTML = `R`
+      threads_3.innerHTML = `E`
+      threads_4.innerHTML = `A`
+      dma_1.innerHTML = `D`
+      threads_5.innerHTML = `S`
+      frase.innerHTML = `<br><img src="acertou.png" alt="">`
+    } else  if (input_Verificageral.value == 'Memoria chache' || input_Verificageral.value == 'cache') {
+      cache_1.innerHTML = `C`
+      MemoriaMassa_12.innerHTML = `A`
+      cache_2.innerHTML = `C`
+      cache_3.innerHTML = `H`
+      cache_4.innerHTML = `E`
+      frase.innerHTML = `<br><img src="acertou.png" alt="">`
+    } else if (input_Verificageral.value == "i5") {
+      registradores_3.innerHTML = `I`
+      i5_1.innerHTML = `5`
+      frase.innerHTML = `<br><img src="acertou.png" alt="">`
+    } else  if (input_Verificageral.value == "data bus" || input_Verificageral.value == "Data Bus") {
+      MemoriaMassa_6.innerHTML = `D`
+      DataBus_1.innerHTML = `A`
+      DataBus_2.innerHTML = `T`
+      ula_3.innerHTML = `A`
+      DataBus_3.innerHTML = `B`
+      QuadCore_1.innerHTML = `U`
+      DataBus_4.innerHTML = `S`
+      registradores_3.innerHTML = `I`
+      frase.innerHTML = `<br><img src="acertou.png" alt="">`
+      function proxima(){
+        frase.innerHTML=``
+        input_Verificageral.value=``
+      }
+    } else {
+
+      frase.innerHTML = `<br><img src="errou.png" alt="">`
+      function proxima(){
+        frase.innerHTML=``
+        input_Verificageral.value=``
+      }
+    }
+    function proxima(){
+        frase.innerHTML=``
+        input_Verificageral.value=``
+    }
+
+}
   function mostrar1() {
     frase.innerHTML =
       ` <br> responsável por processar todas as principais operações de funcionamento de um computador <br>
